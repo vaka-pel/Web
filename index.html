@@ -2,8 +2,21 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <title>HTML lesson 1</title>
+	<link rel="icon" href="bitcoin.png" >
+	<style>
+		h2, h4, h6
+		{
+			text-align:center;
+			color:red;
+			font-family:'Segoe UI';
+		}
+		h4
+		{
+			color:darkgreen;
+		}
+	</style>
 </head>
 <body>
 	<details>
@@ -14,16 +27,33 @@
 		<h4>Заголовок 4</h4>
 		<h5>Заголовок 5</h5>
 		<h6>Заголовок 6</h6>
-		<p>Текст<p />
+		<p>Текст<p>
 	</details>
 
-	<details open>
-		<summery>Дескрипторы</summery>
-		<b><tt>&#60;p&#62;</tt> (Paragraf)</b> &#8211; этот дескриптор описывает абзац;<br/>
-		<b><tt>&lt;b&gt;</tt> (Bold)</b>	   &ndash; <b>этот дескриптор делает шрифт жирным</b>;<br/>
-		<b><tt>&#60;i&#62;</tt> (Italik)</b>   &#8210; <i>этот дескриптор делает шрифт курсивным</i>;<br/>
-		<b><tt>&#60;u&#62;</tt> (Underline)</b>   &#8210; <u>этот дескриптор делает шрифт подчеркнутым</u>;<br/>
-		<b><tt>&#60;tt&#62;</tt> (Teletype text)</b>   &#8210; <tt> делает шрифт моноширным (каждый символ занимает одинаковую площадь на экране)</tt>;<br/>
+	<details>
+		<summary>Дескрипторы</summary>
+		<h2>Дескрипторы физического форматирования</h2>
+		<b><code>&#60;p&#62;</code> (Paragraf)</b> &#8211; этот дескриптор описывает абзац;<br>
+		<b><code>&lt;b&gt;</code> (Bold)</b>	   &ndash; <b>этот дескриптор делает шрифт жирным</b>;<br>
+		<b><code>&#60;i&#62;</code> (Italik)</b>   &#8210; <i>этот дескриптор делает шрифт курсивным</i>;<br>
+		<b><code>&#60;u&#62;</code> (Underline)</b>   &#8210; <u>этот дескриптор делает шрифт подчеркнутым</u>;<br>
+		<b><code>&#60;tt&#62;</code> (Teletype text)</b>   &#8210; <tt>делает шрифт моноширным (каждый символ занимает одинаковую площадь на экране)</tt>;<br>
+		<b><code>&#60;sup&#62;</code> (Superscript)</b>  &#8210; <tt>Верхний <sup>индекс</sup></tt>;<br>
+		<b><code>&#60;sub&#62;</code> (Subscript)</b>   &#8210; <tt>Нижний <sub>индекс</sub></tt>;<br>
+		<b><code>&#60;pre&#62;</code> (Preformated)</b>   &#8210; <pre>этот дескриптор создает предформатированный текст 
+		в котором сохраняются отступы
+		и переносы строк.
+		кроме того, <b>предформатированный</b> текст всегда отображается <b>моноширным</b> шрифтом</pre>;<br>
+		<hr>
+		<h2>Дескрипторы логического форматирования</h2>
+		<strong><code>&#60;strong&#62;</code> (Bold) </strong> &#8211; делает шрифт <strong> жирным;</strong> <br>
+		<strong><code>&#60;em&#62;</code> (Emphasis) </strong> &#8211; делает шрифт <em> курсивным</em>; <br>
+		<strong><code>&#60;code&#62;</code> (Mono) </strong> &#8211; делает шрифт <code> моноширным</code>; <br>
+		<strong><code>&#60;abbr&#62;</code> (Abbreviation) </strong> &#8211; этим дескриптором желательно выделять <abbr> аббревиатуры</abbr>; <br>
+		<strong><code>&#60;cite&#62;</code> (Citation) </strong> &#8211; этим дескриптором желательно выделять <cite> цитаты</cite>; <br>
+		<hr>
 	</details>
+
+	<h2>CSS - Cascade Style Sheet</h2>
 </body>
 </html>

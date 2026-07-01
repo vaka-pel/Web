@@ -1,9 +1,18 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-body
+body {
+	font-family: 'Roboto Condensed';
+	font-size: 20px;
+	padding: 1% 5%;
+	//background-image: url('img/pcb.jpg');
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+::backdrop 
 {
-	font-family:'Roboto Condensed';
-	font-size:30px;
-	padding:1% 5%;
+	background:rgb(220, 220, 220, 0,18);
+	filter: blur(12px) brightness(0.6) contrast(1.1);
 }
 p
 {
@@ -30,18 +39,48 @@ a
 {
 	text-decoration:none;
 }
-	a:hover
-	{
-		font-weight:800;
-		background-color:black;
-		color:white;
-	}
 	a:active
 	{
 		color:green
 	}
 	a:visited 
 	{
-		background-color: black;
-		color: white;
+		color: darkgreen;
 	}
+	a:hover
+	{
+		font-weight:800;
+		background-color:black;
+		color:white;
+	}
+:target 
+{
+	background-color:limegreen;
+}
+:target + div 
+{
+	/*background-color:#808080;*/
+	border-radius: 15px;
+	background-color:rgba(220, 220, 220, .5);
+	box-shadow: 0 0 25px 25px rgba(220, 220, 220, .7);
+	
+}
+div
+{
+	padding:40px;
+}
+.cite {
+	/*border: solid, 8px;*/
+	border-left: solid 5px blue;
+	margin: 50px 200px 300px; /* внешний отступ*/
+	/*margin: all-sides;*/
+	/*margin: top-bottom left-right*/
+	/*margin: top left-right bottom*/
+	/*margin: top right bottom left*/
+	padding: 50px; /*внутренний отступ*/
+	/*padding: all-sides;*/
+	/*padding: top-bottom left-right*/
+	/*padding: top left-right bottom*/
+	/*padding: top right bottom left*/
+	padding: 50px; /*внутренний отступ*/
+}

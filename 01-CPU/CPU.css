@@ -53,10 +53,10 @@ a
 		background-color:black;
 		color:white;
 	}
-:target 
+/*:target 
 {
 	background-color:limegreen;
-}
+}*/
 :target + div 
 {
 	/*background-color:#808080;*/

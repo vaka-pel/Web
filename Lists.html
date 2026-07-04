@@ -4,63 +4,50 @@
 <head>
     <meta charset="utf-8" />
     <title>Списки</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        ol
-        {
-            /*list-style:georgian;*/
-        }
-        ul
-        {
-            list-style:circle;
-            /*list-style-image:url("00-Intro/bitcoin.png");*/
+        body {
+            font-size: 24px;
         }
 
-		/*li 
-        {
-			list-style: none;
-		}
-		li::before 
-        {
-			content: '';
-			display: inline-block;
-			width: 30px;
-			height: 30px;
-			background-image: url("00-Intro/bitcoin.png");
-            background-size:contain;
-            margin-right:10px;
-		}*/
-        
-    
+        ol {
+            /*list-style:georgian;*/
+        }
+
+        dt {
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
+    <div id="home">
+        <a href="index.html"><img src="home.png" alt="На главную">  </a>
+    </div>
     <h1>Списки</h1>
     <h2>Список определений</h2>
-    <strong><code>&#60;dl&#62;</code></strong> Definitions List;<br>
-    <strong><code>&#60;dt&#62;</code></strong> Description Term;<br>
-    <strong><code>&#60;dd&#62;</code></strong> Description Details;<br>
+    <p>Позволяет создавать списки терминов с их разъяснением</p>
+    <strong><code>&#60;dl&#62;</code></strong> &#8213; Definitions List;<br>
+    <strong><code>&#60;dt&#62;</code></strong> &#8213; Description Term;<br>
+    <strong><code>&#60;dd&#62;</code></strong> &#8213; Description Details;<br>
     <strong><code>&#60;dt&#62;</code></strong> и <strong><code>&#60;dd&#62;</code></strong> всегда используются парой.
     <dl>
         <dt>Нумерованный список</dt>
-        <dd>Позволяет нумеровать элементы текста. Это нужно для перечисления в строгом порядке</dd>
+        <dd>Позволяет нумеровать элементы текста. Это нужно для перечисления в строгом порядке.</dd>
         <dt>Маркированный список</dt>
-        <dd>Позволяет перечислять элементы текста в любом порядке</dd>
-        <dt>Список</dt>
-        <dd>Позволяет перечислять понятия и давать им определения</dd>
+        <dd>Позволяет перечислять элементы текста в любом порядке.</dd>
+        <dt>Список определений</dt>
+        <dd>Позволяет перечислять понятия и давать им определения.</dd>
     </dl>
     <hr>
-
-
-    <p>Позволяет создавать списки терминов с их разъяснением</p>
     <h2>Нумерованный список</h2>
-    <strong><code>&#60;ol&#62;</code></strong> Ordered Lists;<br>
-    <strong><code>&#60;li&#62;</code></strong> List Item;<br>
+    <strong><code>&#60;ol&#62;</code></strong> &#8213; Ordered List;<br>
+    <strong><code>&#60;li&#62;</code></strong> &#8213; List Item;<br>
     <ol>
-        <li>Lists Item 1</li>
-        <li>Lists Item 2</li>
-        <li>Lists Item 3</li>
-        <li>Lists Item 4</li>
-        <li>Lists Item 5</li>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
     </ol>
     <p>При необходимости список можно прервать и продолжить позже</p>
     <ol start="6">
@@ -70,9 +57,10 @@
         <li>Продолжение первого списка</li>
         <li>Продолжение первого списка</li>
     </ol>
+    <hr>
     <h2>Маркированный список</h2>
-    <strong><code>&#60;ul&#62;</code></strong> Unordered Lists;<br>
-    <strong><code>&#60;li&#62;</code></strong> List Item;<br>
+    <strong><code>&#60;ul&#62;</code></strong> &#8213; Unordered List;<br>
+    <strong><code>&#60;li&#62;</code></strong> &#8213; List Item;<br>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>

@@ -3,16 +3,14 @@ body {
 	font-family: 'Roboto Condensed';
 	font-size: 20px;
 	padding: 1% 5%;
-	//background-image: url('img/pcb.jpg');
-	min-height: 100vh;
+	/*background-image: url('img/pcb.jpg');*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 ::backdrop 
 {
-	background:rgb(220, 220, 220, 0,18);
-	filter: blur(12px) brightness(0.6) contrast(1.1);
+	filter: invert(50%);
 }
 p
 {
@@ -20,9 +18,10 @@ p
 	text-indent:48px;
 }
 
-	p::first-letter
+	p::first-letter 
 	{
-		font-size:32px;
+		font-size: 32px;
+		font-family: 'Segoe Script';
 	}
 	
 figure
@@ -53,6 +52,10 @@ a
 		background-color:black;
 		color:white;
 	}
+	#home a:hover
+	{
+		background:none;
+	}
 /*:target 
 {
 	background-color:limegreen;
@@ -67,7 +70,7 @@ a
 }
 div
 {
-	padding:40px;
+	padding: 16px;
 }
 .cite {
 	/*border: solid, 8px;*/

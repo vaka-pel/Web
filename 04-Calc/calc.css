@@ -6,7 +6,7 @@
 }
 .main-window
 {
-	/*border:solid 1px;*/
+	border:solid 1px;
 	width: 400px;
 	height: 300px;
 }
@@ -16,7 +16,11 @@
 	height: 38px;
 	color: white;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-	background-image: linear-gradient( rgb(14,77,190), rgb(42,138,251), rgb(0,86,228), rgb(0,86,228), rgb(0,86,228), rgb(0,86,228), rgb(4,105,253), rgb(4,105,253), rgb(4,105,253), rgb(13,48,141) );
+	background-image: linear-gradient( rgb(14,77,190),
+	rgb(42,138,251), rgb(0,86,228), rgb(0,86,228),
+	rgb(0,86,228), rgb(0,86,228), rgb(4,105,253),
+	rgb(4,105,253), rgb(4,105,253), rgb(13,48,141) 
+	);
 	box-shadow: inset 0px 0px 4px 1px rgb(22, 72, 183);
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -30,16 +34,32 @@
 	align-items: center;
 }
 
+.title-bar-left-side, .title-bar-right-side
+{
+	margin:0px 8px;
+}
 .app-icon
 {
 	width:24px;
 	height:24px;
 }
-.controll-button {
+.control-button 
+{
 	width: 24px;
 	height: 24px;
+	font-weight: 800;
+	font-size: 16px;
+	border: solid 1px white;
+	border-radius: 4px;
+	color: white;
+	/*background-image: linear-gradient(to bottom right, #55A1FF, #0025B5);
+	box-shadow: inset 1px 1px 1px 0px #77A1F5;*/
+	background-color: rgb(45, 109, 249);
+	box-shadow:  inset -2px -1px 4px 0px #000088,
+				 inset 4px 2px 4px 0px #7788FF;
 }
-.title-bar-left-side, .title-bar-right-side
-{
-	margin:0px 8px;
+.close-button {
+	background-color: rgb(221, 85, 26);
+	box-shadow: inset -1px -1px 4px 0px #880000,
+		inset 4px 2px 4px 0px #FF8888;
 }

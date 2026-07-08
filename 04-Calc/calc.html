@@ -7,30 +7,65 @@
     <title>Калькулятор</title>
 </head>
 <body>
-    
-        <div class="main-window">
-            <div class="title-bar">
-                <div class="title-bar-left-side">
-                    <img src="CalcXP.ico" class="app-icon" />
-                    <div>&#8211 Калькулятор</div>
-                </div>
-                <div class="title-bar-right-side">
-                    <button class="control-button btn-minimize">&#x1F5D5;</button>
-                    <button class="control-button btn-maximize" disabled>&#128470;</button>
-                    <button class="control-button btn-close">&#10006;</button>
-                </div>
+
+    <div class="main-window">
+        <div class="title-bar">
+            <div class="title-bar-left-side">
+                <img src="CalcXP.ico" class="app-icon" />
+                <div>&#8211 Калькулятор</div>
             </div>
-                <div class="menu-bar">
-                    <div class="menu-item">Edit</div>
-                    <div class="menu-item">View</div>
-                    <div class="menu-item">Help</div>
-                </div>
-           <!--------------------------------------------->
-            <div class="client-rect">
-
+            <div class="title-bar-right-side">
+                <button class="control-button btn-minimize">&#x1F5D5;</button>
+                <button class="control-button btn-maximize" disabled>&#128470;</button>
+                <button class="control-button btn-close">&#10006;</button>
             </div>
-
-
         </div>
+        <div class="menu-bar">
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Help</div>
+        </div>
+    <!--------------------------------------------->
+    <div class="display" id="display">0</div>
+
+    <div class="buttons">
+        <button class="mem-btn">MC</button>
+        <button class="top-btn">Back</button>
+        <button class="top-btn">CE</button>
+        <button class="top-btn">C</button>
+        <button class="fn-btn">±</button>
+        <button class="fn-btn">√</button>
+
+        <button class="mem-btn">MR</button>
+        <button class="num-btn">7</button>
+        <button class="num-btn">8</button>
+        <button class="num-btn">9</button>
+        <button class="op-btn">/</button>
+        <button class="fn-btn">%</button>
+
+        <button class="mem-btn">MS</button>
+        <button class="num-btn">4</button>
+        <button class="num-btn">5</button>
+        <button class="num-btn">6</button>
+        <button class="op-btn">*</button>
+        <button class="fn-btn">1/x</button>
+
+        <button class="mem-btn">M+</button>
+        <button class="num-btn">1</button>
+        <button class="num-btn">2</button>
+        <button class="num-btn">3</button>
+        <button class="op-btn">-</button>
+        <button class="equals-btn">=</button>
+
+        <button></button>
+        <button class="num-btn zero-btn">0</button>
+        <button class="num-btn">.</button>
+        <button class="op-btn">+</button>
+    </div>
+    
+    </div>
+
+
+
 </body>
 </html>

@@ -20,13 +20,16 @@
 .title-bar {
 	width: 100%;
 	height: 38px;
-	background-color: blue;
+	background: linear-gradient(180deg,
+	#0058E6 0%, #3593FF 8%, #288EFF 18%,
+	#127EFF 32%, #0F75FF 50%, #0C6BFF 68%,
+	#0A5FF5 82%, #0853E6 92%, #0048D6 100%);
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 .title-bar-left-side
 {
@@ -39,8 +42,7 @@
 	width:24px;
 	height:24px;
 }
-.control-button 
-{
+.control-button {
 	width: 24px;
 	height: 24px;
 	
@@ -59,6 +61,116 @@
 	background: linear-gradient(180deg, #E87858 0%, #D14828 50%, #B82010 100%);
 	border-color: rgba(255,200,180,0.4);
 	border-radius: 4px;
+}
+.menu-bar {
+	display: flex;
+	background: #ECE9D8;
+	padding: 2px 4px;
+	font-size: 11px;
+	border-bottom: 1px solid #ACA899;
+}
+
+.menu-item {
+	padding: 2px 6px;
+	cursor: pointer;
+}
+
+	.menu-item:hover {
+		background: #316AC5;
+		color: white;
+	}
+
+	.menu-item u {
+		text-decoration: underline;
+	}
+
+.display {
+	background: white;
+	border: 1px solid #7F7F7F;
+	border-top-color: #404040;
+	border-left-color: #404040;
+	margin: 6px 6px 4px 6px;
+	padding: 3px 5px;
+	text-align: right;
+	font-family: "Courier New", monospace;
+	font-size: 16px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 28px repeat(5, 1fr);
+	gap: 3px;
+	padding: 4px 6px 6px 6px;
+}
+
+button {
+	height: 23px;
+	background: #ECE9D8;
+	border: 1px solid #ACA899;
+	border-top-color: #FFF;
+	border-left-color: #FFF;
+	border-right-color: #404040;
+	border-bottom-color: #404040;
+	border-radius: 3px;
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	color: #000;
+	cursor: pointer;
+	outline: none;
+	box-shadow: inset 1px 1px 0 #FFF, inset -1px -1px 0 #808080;
+}
+
+	button:active {
+		border-top-color: #404040;
+		border-left-color: #404040;
+		border-right-color: #FFF;
+		border-bottom-color: #FFF;
+		box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #FFF;
+		padding-top: 1px;
+		padding-left: 1px;
+	}
+
+	button:hover {
+		background: #F3F1E5;
+	}
+
+.mem-btn {
+	color: #C00000;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.top-btn {
+	color: #C00000;
+	font-weight: bold;
+}
+
+.op-btn {
+	color: #C00000;
+	font-weight: bold;
+}
+
+.equals-btn {
+	grid-row: span 2;
+	color: #C00000;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.num-btn {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.fn-btn {
+	color: #C00000;
+	font-weight: bold;
+}
+
+.zero-btn {
+	grid-column: span 2;
 }
 
 

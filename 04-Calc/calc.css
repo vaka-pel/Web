@@ -1,17 +1,21 @@
-﻿body
+﻿body 
 {
-	background-image:url("bliss.jpg");
-	background-size:100%;
-	font-family:Tahoma;
+	background-image: url("bliss.jpg");
+	background-size: cover;
+	background-position: center center; /* Центрируем изображение */
+	background-repeat: no-repeat; /* Не повторяем */
+	background-attachment: fixed; /* Фиксируем при прокрутке */
+	font-family: Tahoma;
 }
 .main-window
 {
-	border:solid 1px;
+	/*border:solid 1px;*/
 	width: 400px;
 	height: 300px;
 }
 
-.title-bar {
+.title-bar 
+{
 	width: 100%;
 	height: 38px;
 	color: white;
@@ -34,9 +38,11 @@
 	align-items: center;
 }
 
-.title-bar-left-side, .title-bar-right-side
+.title-bar-left-side, .title-bar-right-side 
 {
-	margin:0px 8px;
+	margin: 0px 8px;
+	display: flex;
+	align-items: center;
 }
 .app-icon
 {
@@ -44,10 +50,11 @@
 	height:24px;
 }
 .control-button {
-	width: 24px;
-	height: 24px;
+	width: 28px;
+	height: 28px;
 	font-weight: 800;
 	font-size: 15px;
+	margin: 0px 1px;
 	padding: 0px 1px 8px 1px;
 	position: relative;
 	border: solid 1px white;
@@ -58,8 +65,68 @@
 	background-color: rgb(45, 109, 249);
 	box-shadow: inset -2px -1px 4px 0px #000088, inset 4px 2px 4px 0px #7788FF;
 }
-.close-button {
+.control-button:hover 
+{
+	background-image: linear-gradient(
+		to bottom right,
+	rgb(149, 149, 249),
+	rgb(45, 109, 249),
+	rgb(149, 149, 249)
+	);
+}
+
+.control-button:active 
+{
+	background-image: none;
+	background-color: rgb(85, 85, 192);
+	box-shadow:
+		inset 4px 2px 4px 0px #000088,
+		inset -4px -2px 4px 0px #7788FF;
+}
+.control-button-signature 
+{
+	font-size: 20px;
+	font-family: 'Courier New';
+	margin: -4px 0px 0px 0px;
+}
+
+.close-button-signature 
+{
+	font-size: 20px;
+	font-family: 'Courier New';
+	margin: -2px 0px 0px 0px;
+}
+.close-button 
+{
 	background-color: rgb(221, 85, 26);
-	box-shadow: inset -1px -1px 4px 0px #880000,
+	box-shadow: 
+		inset -1px -1px 4px 0px #880000,
 		inset 4px 2px 4px 0px #FF8888;
+}
+	.close-button:hover 
+	{
+		background-image: linear-gradient( to bottom right,
+		rgb(249, 149, 149),
+		rgb(249, 85, 26),
+		rgb(249, 128, 85)
+		);
+	}
+
+	.close-button:active 
+	{
+		box-shadow: inset 4px 2px 4px 0px #880000, inset -2px -1px 4px 0px #FF8888;
+		background-image: linear-gradient( to bottom right,
+		rgb(224, 49, 49),
+		rgb(224, 85, 26),
+		rgb(224, 64, 85)
+		);
+	}
+
+
+.control-button[disabled], .control-button[disabled]:hover, .control-button[disabled]:active {
+	color: #CCCCCC;
+	border-color: #CCCCCC;
+	background-image: none;
+	background-color: rgb(45, 109, 249);
+	box-shadow: inset -1px -2px 4px 0px #000088, inset 4px 2px 4px 0px #7788FF;
 }

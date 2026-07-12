@@ -45,24 +45,27 @@
 .control-button {
 	width: 24px;
 	height: 24px;
-	
 }
 .title-bar-left-side, .title-bar-right-side
 {
 	margin:0px 8px;
 }
-.btn-minimize, .btn-maximize {
+.btn-minimize, .btn-maximize 
+{
 	background: linear-gradient(180deg, #3A8FEE 0%, #1464D8 50%, #0A4EBF 100%);
 	border-color: rgba(255,200,180,0.4);
 	border-radius: 4px;
+	color: white;
 }
 .btn-close 
 {
 	background: linear-gradient(180deg, #E87858 0%, #D14828 50%, #B82010 100%);
 	border-color: rgba(255,200,180,0.4);
 	border-radius: 4px;
+	color: white;
 }
-.menu-bar {
+.menu-bar 
+{
 	display: flex;
 	background: #ECE9D8;
 	padding: 2px 4px;
@@ -70,21 +73,25 @@
 	border-bottom: 1px solid #ACA899;
 }
 
-.menu-item {
+.menu-item 
+{
 	padding: 2px 6px;
 	cursor: pointer;
 }
 
-	.menu-item:hover {
+	.menu-item:hover 
+	{
 		background: #316AC5;
 		color: white;
 	}
 
-	.menu-item u {
+	.menu-item u 
+	{
 		text-decoration: underline;
 	}
 
-.display {
+.display 
+{
 	background: white;
 	border: 1px solid #7F7F7F;
 	border-top-color: #404040;
@@ -98,14 +105,16 @@
 	overflow: hidden;
 }
 
-.buttons {
+.buttons 
+{
 	display: grid;
 	grid-template-columns: 28px repeat(5, 1fr);
 	gap: 3px;
 	padding: 4px 6px 6px 6px;
 }
 
-button {
+button 
+{
 	height: 23px;
 	background: #ECE9D8;
 	border: 1px solid #ACA899;
@@ -122,7 +131,8 @@ button {
 	box-shadow: inset 1px 1px 0 #FFF, inset -1px -1px 0 #808080;
 }
 
-	button:active {
+	button:active 
+	{
 		border-top-color: #404040;
 		border-left-color: #404040;
 		border-right-color: #FFF;
@@ -132,44 +142,52 @@ button {
 		padding-left: 1px;
 	}
 
-	button:hover {
+	button:hover 
+	{
 		background: #F3F1E5;
 	}
 
-.mem-btn {
+.mem-btn 
+{
 	color: #C00000;
 	font-weight: bold;
 	font-size: 10px;
 }
 
-.top-btn {
+.top-btn 
+{
 	color: #C00000;
 	font-weight: bold;
 }
 
-.op-btn {
+.op-btn 
+{
 	color: #C00000;
 	font-weight: bold;
 }
 
-.equals-btn {
+.equals-btn 
+{
 	grid-row: span 2;
 	color: #C00000;
 	font-weight: bold;
 	font-size: 13px;
 }
 
-.num-btn {
+.num-btn 
+{
 	font-size: 12px;
 	font-weight: bold;
 }
 
-.fn-btn {
+.fn-btn 
+{
 	color: #C00000;
 	font-weight: bold;
 }
 
-.zero-btn {
+.zero-btn 
+{
 	grid-column: span 2;
 }
 

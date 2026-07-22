@@ -11,22 +11,24 @@
 </head>
 <body>
     <h1>Формы и события</h1>
-    <h2>Factorial</h2>
-	<div class="task">
-	<!--<div class="pair">
-	</div>-->
-			<label for="number">введите целое число от 0 до 170:</label>
-			<input id="number" type="number" onchange="Factorial()">
-		<button onclick="Factorial()">Вычислить</button>
-        
-	</div>
-		<div id="factorial-result" class="result"></div>
-		<!--<input id="factorial-result" class="result" type="text">-->
-    <hr>
-    <h2>Power</h2>
-    <div class="task">
-        
-    </div >
+    <div class="calc">
+        <label for="operation">Выберите операцию:</label>
+        <select id="operation">
+            <option value="factorial">Факториал (n!)</option>
+            <option value="fibonacci">Число Фибоначчи (F(n))</option>
+            <option value="power">Возведение в степень (a^n)</option>
+        </select>
+
+        <label for="num1">Введите число (n):</label>
+        <input type="number" id="num1" placeholder="">
+
+        <label for="num2" id="label2" class="hidden">Введите показатель степени (n):</label>
+        <input type="number" id="num2" class="hidden" placeholder="">
+
+        <button onclick="calculate()">Вычислить</button>
+
+        <div id="result" class="result"></div>
+    </div>
     <script src="forms_and_events.js">
         
     </script>

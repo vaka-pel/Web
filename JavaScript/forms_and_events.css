@@ -34,5 +34,32 @@ label
 	overflow:scroll;
 	width:100%;
 	height:400px;
+	word-break:break-all;
 
+}
+/*/////////////////////////////////////////////////////////////*/
+
+.images-and-colors
+{
+	width:80%;
+	display:flex;
+	justify-content:space-between;
+}
+.image-container
+{
+	border:solid;
+	/*width:800px;
+	height:600px;*/
+}
+#image, .image-container
+{
+	width:400px;
+	height:300px;
+}
+.select-color
+{
+	display:flex;
+	justify-content:space-between;
+
+	margin:12px;
 }

@@ -26,6 +26,7 @@ function setBackgroundColor(event)
 
 {
     document.body.style.backgroundColor = event.target.value;
+    console.log(event.target.id);
     /*document.body.style.backgroundColor = document.getElementById("background-color").value;*/
     //let color = document.getElementById("bakcground-color").value;
     //document.body.style.backgroundColor = color;
@@ -36,4 +37,19 @@ function setForegroundColor()
 {
     document.body.style.color = document.getElementById("foreground-color").value;
    
+}
+function setColor(event)
+{
+    /*
+        == - сравнивает два значения
+        === - сравнивает два значения и типы этих значений
+        === - возврвщает 'true' только в том случае, если значения как и типы совпадают
+        
+    */
+    if (event.target.id === 'background-color') 
+        document.body.style.backgroundColor = event.target.value;
+    
+    else 
+        document.body.style.color = event.target.value;
+    console.log(evend.target.id);
 }

@@ -1,4 +1,4 @@
-// JavaScript source code
+п»ї// JavaScript source code
 const operation = document.getElementById('operation');
 const num2 = document.getElementById('num2');
 const label2 = document.getElementById('label2');
@@ -13,32 +13,32 @@ operation.addEventListener('change', () => {
     }
 });
 
-// --- Функции вычислений ---
+// --- Р¤СѓРЅРєС†РёРё РІС‹С‡РёСЃР»РµРЅРёР№ ---
 
-// Факториал через BigInt (чтобы не терять точность на больших числах)
+// Р¤Р°РєС‚РѕСЂРёР°Р» С‡РµСЂРµР· BigInt (С‡С‚РѕР±С‹ РЅРµ С‚РµСЂСЏС‚СЊ С‚РѕС‡РЅРѕСЃС‚СЊ РЅР° Р±РѕР»СЊС€РёС… С‡РёСЃР»Р°С…)
 function factorial(n) {
-    if (n < 0) throw new Error('Факториал отрицательного числа не определён');
-    if (!Number.isInteger(n)) throw new Error('Факториал определён только для целых чисел');
+    if (n < 0) throw new Error('Р¤Р°РєС‚РѕСЂРёР°Р» РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРіРѕ С‡РёСЃР»Р° РЅРµ РѕРїСЂРµРґРµР»С‘РЅ');
+    if (!Number.isInteger(n)) throw new Error('Р¤Р°РєС‚РѕСЂРёР°Р» РѕРїСЂРµРґРµР»С‘РЅ С‚РѕР»СЊРєРѕ РґР»СЏ С†РµР»С‹С… С‡РёСЃРµР»');
     let result = 1n;
     for (let i = 2n; i <= BigInt(n); i++) result *= i;
     return result;
 }
 
-// n-е число Фибоначчи (F(0)=0, F(1)=1)
+// n-Рµ С‡РёСЃР»Рѕ Р¤РёР±РѕРЅР°С‡С‡Рё (F(0)=0, F(1)=1)
 function fibonacci(n) {
-    if (n < 0) throw new Error('Число Фибоначчи для отрицательного n не определено');
-    if (!Number.isInteger(n)) throw new Error('n должно быть целым числом');
+    if (n < 0) throw new Error('Р§РёСЃР»Рѕ Р¤РёР±РѕРЅР°С‡С‡Рё РґР»СЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРіРѕ n РЅРµ РѕРїСЂРµРґРµР»РµРЅРѕ');
+    if (!Number.isInteger(n)) throw new Error('n РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С†РµР»С‹Рј С‡РёСЃР»РѕРј');
     let a = 0n, b = 1n;
     for (let i = 0; i < n; i++) [a, b] = [b, a + b];
     return a;
 }
 
-// Возведение в степень ( BigInt^n )
+// Р’РѕР·РІРµРґРµРЅРёРµ РІ СЃС‚РµРїРµРЅСЊ ( BigInt^n )
 function power(a, n)
 {
-    if (!Number.isInteger(n)) throw new Error('Показатель степени должен быть целым');
+    if (!Number.isInteger(n)) throw new Error('РџРѕРєР°Р·Р°С‚РµР»СЊ СЃС‚РµРїРµРЅРё РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С†РµР»С‹Рј');
     if (n < 0) {
-        // Для отрицательной степени возвращаем обычное число
+        // Р”Р»СЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕР№ СЃС‚РµРїРµРЅРё РІРѕР·РІСЂР°С‰Р°РµРј РѕР±С‹С‡РЅРѕРµ С‡РёСЃР»Рѕ
         return Math.pow(a, n);
     }
     let result = 1n;
@@ -47,7 +47,7 @@ function power(a, n)
     return result;
 }
 
-// --- Главная функция ---
+// --- Р“Р»Р°РІРЅР°СЏ С„СѓРЅРєС†РёСЏ ---
 function calculate()
 {
     const resultBox = document.getElementById('result');
@@ -61,7 +61,7 @@ function calculate()
     {
         if (a === '' || (op === 'power' && b === ''))
         {
-            throw new Error('Заполните все поля');
+            throw new Error('Р—Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ');
         }
 
         const n1 = Number(a);
@@ -86,6 +86,6 @@ function calculate()
     catch (e)
     {
         resultBox.classList.add('error');
-        resultBox.textContent = 'Ошибка: ' + e.message;
+        resultBox.textContent = 'РћС€РёР±РєР°: ' + e.message;
     }
 }
